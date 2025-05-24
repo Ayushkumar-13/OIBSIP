@@ -66,7 +66,6 @@ buttons.forEach(button => {
       '±': '±',
     };
 
-    // Evaluate when clicking '=' or ENTER button
     if (val === '=' || button.classList.contains('enter-btn')) {
       try {
         let expr = display.value;
@@ -106,7 +105,7 @@ buttons.forEach(button => {
       return;
     }
 
-    // Skip invalid buttons (non-numeric, non-operator, non-Ans, except special symbols)
+    
     if (!val.match(/^[0-9]$/) && !Object.keys(operatorsMap).includes(val)) {
       return;
     }

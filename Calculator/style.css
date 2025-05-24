@@ -16,7 +16,8 @@ body {
 
 .calculator {
   background-color: #EBF5FF;
-  padding: 2rem; /* Increased padding to push input bar lower */
+  padding: 2rem;
+  /* Increased padding to push input bar lower */
   padding-top: 3rem;
   border-radius: 10px;
   width: 100%;
@@ -32,7 +33,8 @@ body {
 
 #display {
   width: 100%;
-  height: 7rem; /* Increased height */
+  height: 7rem;
+  /* Increased height */
   font-size: 2rem;
   padding: 0 1rem;
   margin-bottom: 1rem;
@@ -43,6 +45,7 @@ body {
   text-align: right;
   overflow-x: auto;
 }
+
 #display:focus {
   outline: none;
   box-shadow: none;
@@ -66,8 +69,10 @@ body {
   border-radius: 8px;
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.2);
   text-align: center;
-  height: 65px; /* Increased height */
-  width: 100%; /* Uses full grid width */
+  height: 65px;
+  /* Increased height */
+  width: 100%;
+  /* Uses full grid width */
 }
 
 .button:hover {
@@ -114,11 +119,22 @@ body {
   font-size: 1.4rem;
 }
 
+@media (max-width: 768px) {
+  #display {
+    pointer-events: none;
+    user-select: none;
+    background-color: #CCE5FF;
+    color: #1A3A58;
+    cursor: not-allowed;
+  }
+}
+
 @media (max-width: 400px) {
   .calculator {
     max-width: 100%;
     padding: 1rem;
-    min-height: 500px; /* adjust for small screens */
+    min-height: 500px;
+    /* adjust for small screens */
   }
 
   #display {
@@ -128,6 +144,7 @@ body {
 
   .button {
     font-size: 1rem;
-    height: 55px; /* adjust for small screen */
+    height: 55px;
+    /* adjust for small screen */
   }
 }

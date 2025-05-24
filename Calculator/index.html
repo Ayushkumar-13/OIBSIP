@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator Grid 5x5</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="display" placeholder="0" />
+    <div class="keys">
+      <!-- Row 1 -->
+      <div class="button operator">(</div>
+      <div class="button operator">)</div>
+      <div class="button operator" id="ans">ans</div>
+      <div class="button operator" data-action="delete">del</div>
+      <div class="button operator" data-action="clear">clear</div>
+
+      <!-- Row 2 -->
+      <div class="button number">7</div>
+      <div class="button number">8</div>
+      <div class="button number">9</div>
+      <div class="button operator">%</div>
+      <div class="button operator" id="root-under">&radic;</div>
+      
+
+      <!-- Row 3 -->
+      <div class="button number">4</div>
+      <div class="button number">5</div>
+      <div class="button number">6</div>
+      <div class="button operator">x</div>
+      <div class="button operator">&divide;</div>
+      
+
+      <!-- Row 4 -->
+      <div class="button number">1</div>
+      <div class="button number">2</div>
+      <div class="button number">3</div>
+      <div class="button operator">+</div>
+      <div class="button operator">-</div>
+
+      <!-- Row 5 -->
+      <div class="button operator">.</div>
+      <div class="button number">0</div>
+      <div class="button operator">&plusmn</div>
+
+      <div class="button enter-btn">ENTER</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -121,10 +121,6 @@ body {
 
 @media (max-width: 768px) {
   #display {
-    pointer-events: none;
-    user-select: none;
-    background-color: #CCE5FF;
-    color: #1A3A58;
     cursor: not-allowed;
   }
 }
